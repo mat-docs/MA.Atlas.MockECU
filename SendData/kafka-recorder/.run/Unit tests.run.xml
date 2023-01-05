@@ -1,0 +1,14 @@
+<!-- Generated 2023-01-05 17:28:57 by go-framework v2.1.4 -->
+<!-- SESSION-START: all -->
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Unit tests" type="GoTestRunConfiguration" factoryName="Go Test">
+        <module name="kafka-recorder"/>
+        <working_directory value="$PROJECT_DIR$"/>
+        <kind value="DIRECTORY"/>
+        <directory value="$PROJECT_DIR$/unit-tests"/>
+        <filePath value="$PROJECT_DIR$"/>
+        <framework value="gotest"/>
+        <method v="2"/>
+    </configuration>
+</component>
+        <!-- SESSION-END: all -->

@@ -1,0 +1,23 @@
+version: '3.9'
+
+# docker compose up will run the container and write the data to kafka
+# container will quit when data has been written
+
+networks:
+  mclaren-net:
+    name: "mclaren-net"
+    external: true
+
+services:
+  send-data:
+    build: .
+    networks:
+      mclaren-net:
+    environment:
+      BROKERS: "kafka:9092"
+      TOPIC: "McLarenTest"
+      DATAFILE: "/data/kafka.dat"
+      GO_LOGLEVEL: "Trace"
+    volumes:
+      - ./:/data
+

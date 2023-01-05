@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Record" type="GoApplicationRunConfiguration" factoryName="Go Application">
+        <module name="kafka-recorder"/>
+        <working_directory value="$PROJECT_DIR$"/>
+        <parameters value="record -t 5000 -f kafka.dat"/>
+        <envs>
+            <env name="BROKERS" value="[1,2,3]"/>
+            <env name="TOPIC" value="RobTest"/>
+        </envs>
+        <kind value="FILE"/>
+        <package value="kafka-recorder"/>
+        <directory value="$PROJECT_DIR$"/>
+        <filePath value="$PROJECT_DIR$/main.go"/>
+        <method v="2"/>
+    </configuration>
+</component>

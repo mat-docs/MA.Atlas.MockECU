@@ -1,0 +1,36 @@
+Config:
+  SingleReadConfig: "true"
+
+Application:
+  Title: "Kafka recorder"
+  Name: "kafka-recorder"
+  Summary: "A small tool for recording and playing back kafka messages"
+  Description: "record and playback kafka messages"
+  Repository: "gitlab.com/atrico/kafka-recorder"
+
+Commands:
+  - Name: "record"
+    Description: "Record kafka messages"
+  - Name: "replay"
+    Description: "Replay kafka messages"
+
+UserSettings:
+  - Skeleton: "file"
+    Description: "Record file"
+    EnvVar: "DATAFILE"
+  - Id: "Brokers"
+    Name: "Brokers"
+    Description: "Kafka brokers"
+    Cmdline: "broker"
+    CmdlineShortcut: "b"
+    EnvVar: "BROKERS"
+    Type: "[]string"
+  - Id: "Topic"
+    Name: "Topic"
+    Description: "Kafka topic"
+    Cmdline: "topic"
+    EnvVar: "TOPIC"
+    Type: "string"
+  - Skeleton: "timeout"
+    EnvVar: "TIMEOUT"
+    DefaultVal: "30000"

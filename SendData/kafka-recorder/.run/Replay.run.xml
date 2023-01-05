@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Replay" type="GoApplicationRunConfiguration" factoryName="Go Application">
+        <module name="kafka-recorder"/>
+        <working_directory value="$PROJECT_DIR$"/>
+        <parameters value="replay --topic RobTest2 -b kafka:9092 -t 5000 -f kafka.dat"/>
+        <kind value="FILE"/>
+        <package value="kafka-recorder"/>
+        <directory value="$PROJECT_DIR$"/>
+        <filePath value="$PROJECT_DIR$/main.go"/>
+        <method v="2"/>
+    </configuration>
+</component>
